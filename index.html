@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+     
+        body {
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        div {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: white;
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 { 
+            text-align: center;
+            color: black;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightgray;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+    <h2>SIMPLE AVERAGE CALCULATOR</h2>
+    
+    <p>Score 1:</p>
+    <input type="text" id="score1" placeholder="Enter first score">
+
+    <p>Score 2:</p>
+    <input type="text" id="score2" placeholder="Enter second score">
+
+    <button py-click="compute_average">Compute Average</button>
+
+    <p>Average: <span id="average"></span></p>
+    <p>Pass or Fail? <span id="result"></span></p>
+
+    <script type="py" src="main.py"></script>
+
+    </div>
+
+</body>
+</html> 
